@@ -1,0 +1,117 @@
+//==============================================================================
+//  screen.css
+//  表示用。スタイルは基本的にここに全て書く
+//==============================================================================
+
+// compass を使うよ!
+@import "compass";
+
+//==============================================================================
+//  全体のレイアウト設定
+//==============================================================================
+
+// ページ幅
+$containerWidth: 940px;
+
+// ページのレイアウト全般の余白
+$sectionGutter: 50px;
+
+// コンテンツエリアの余白
+$contentSectionGutter: 50px;
+
+.container {
+  width: $containerWidth;
+}
+
+#header {
+  margin-top: $sectionGutter + 30px;
+  text-align: center;
+}
+
+#nav {
+  margin-top: $sectionGutter;
+
+  ul li {
+    width: $containerWidth / 4;
+    float: left;
+
+    &.nav-dic   { background-color: #e6136e; }
+    &.nav-spot  { background-color: #e9a800; }
+    &.nav-class { background-color: #6ab935; }
+    &.nav-glry  { background-color: #45a7de; }
+
+    a {
+      padding: 27px 5px 3px 0;
+      text-align: right;
+      display: block;
+      font-size: 20px;
+      color: #fff;
+      @include text-shadow(0 1px 1px rgba(0, 0, 0, 0.7));
+    }
+  }
+}
+
+#content {
+  margin-top: $sectionGutter;
+  padding-bottom: $sectionGutter;
+  background-color: #e8e8e8;
+
+  // ページ毎に異なるだろうスタイルは下に記述
+}
+
+#footer {
+  margin-top: $sectionGutter * 0.7;
+  margin-bottom: $sectionGutter * 1.3;
+
+  .credit {
+    text-align: center;
+  }
+}
+
+//==============================================================================
+//  ページ毎のスタイル
+//==============================================================================
+
+#content {
+
+  //----------------------------------------------------------------------------
+  // トップページ
+  //----------------------------------------------------------------------------
+
+  &.top {
+
+    > header {
+      h1 {
+        $fontSize: 25px;
+        font-size: $fontSize;
+        line-height: $fontSize;
+        margin: -($fontSize / 2) 0;
+        padding-left: 25px;
+      }
+    }
+    figure.span5 {
+      img {
+        padding-top: $contentSectionGutter;
+        padding-left: $contentSectionGutter;
+      }
+    }
+    div.span7 {
+      header {
+        padding-top: $contentSectionGutter;
+
+        h1 {
+          $fontSize: 16px;
+          font-size: $fontSize;
+          line-height: $fontSize;
+        }
+      }
+      header,
+      article {
+        padding-right: $contentSectionGutter;
+      }
+    }
+  }
+}
+
+
+
