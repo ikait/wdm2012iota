@@ -23,13 +23,70 @@ $contentSectionGutter: 50px;
   width: $containerWidth;
 }
 
+#page {
+  overflow-x: hidden;
+  min-width: 1000px;
+}
+
+#wrap-header {
+  background: url(../img/hdr-bgrr.png);
+  background-repeat: repeat-x;
+}
+
+#wrap-content {
+  background: url(../img/cnt-bg.png);
+  margin-top: -30px;
+  padding-top: 30px;
+}
+
+#wrap-colophon {
+  background-color: #ecebec;
+}
+
 #header {
-  margin-top: $sectionGutter + 30px;
+  padding-top: $sectionGutter + 30px;
   text-align: center;
+
+  .logo {
+    figure {
+      img {
+        max-width: none;
+        position: relative;
+        left: -40px;
+        z-index: 1;
+      }
+    }
+    figcaption {
+      position: relative;
+      left: 25px;
+    }
+  }
+  .mascot {
+    height: 210px;
+
+    .character {
+      max-width: none;
+      position: relative;
+      top: -60px;
+      left: -80px;
+      z-index: 2;
+    }
+    .building {
+      max-width: none;
+      position: relative;
+      top: -410px;
+      left: -130px;
+      z-index: 0;
+    }
+  }
 }
 
 #nav {
   margin-top: $sectionGutter;
+  position: relative;
+  border: 2px solid #fff;
+  z-index: 9999;
+  @include box-shadow(0 0 10px #ccc);
 
   ul li {
     width: $containerWidth / 4;
@@ -41,7 +98,7 @@ $contentSectionGutter: 50px;
     &.nav-glry  { background-color: #45a7de; }
 
     a {
-      padding: 27px 5px 3px 0;
+      padding: 33px 5px 3px 0;
       text-align: right;
       display: block;
       font-size: 20px;
@@ -54,17 +111,53 @@ $contentSectionGutter: 50px;
 #content {
   margin-top: $sectionGutter;
   padding-bottom: $sectionGutter;
-  background-color: #e8e8e8;
+  background-color: #fff;
+  border: 5px dotted #ecebec;
 
-  // ページ毎に異なるだろうスタイルは下に記述
+  // ページ毎に異なるだろうスタイルは下に記述してね
 }
 
 #footer {
   margin-top: $sectionGutter * 0.7;
-  margin-bottom: $sectionGutter * 1.3;
+  padding-bottom: $sectionGutter * 0.5;
 
   .credit {
     text-align: center;
+  }
+}
+
+#colophon {
+
+  .fnav {
+    margin: $sectionGutter*0.4 0 0;
+    li {
+      float: left;
+      list-style: none;
+      border-left: 1px solid #999;
+      margin-left: 20px;
+      padding-left: 20px;
+
+      &:first-child {
+        border-left: none;
+      }
+    }
+  }
+
+  .colored {
+    margin: 0;
+    li {
+      float: left;
+      list-style: none;
+      text-indent: -9999em;
+      height: 90px;
+      width: 50px;
+
+      &.red { background-color: #e2007c }
+      &.yellow { background-color: #ffc300 }
+      &.green { background-color: #4cc52d }
+      &.blue { background-color: #009cec }
+
+    }
   }
 }
 

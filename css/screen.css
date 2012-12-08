@@ -2,13 +2,66 @@
   width: 940px;
 }
 
+#page {
+  overflow-x: hidden;
+  min-width: 1000px;
+}
+
+#wrap-header {
+  background: url(../img/hdr-bgrr.png);
+  background-repeat: repeat-x;
+}
+
+#wrap-content {
+  background: url(../img/cnt-bg.png);
+  margin-top: -30px;
+  padding-top: 30px;
+}
+
+#wrap-colophon {
+  background-color: #ecebec;
+}
+
 #header {
-  margin-top: 80px;
+  padding-top: 80px;
   text-align: center;
+}
+#header .logo figure img {
+  max-width: none;
+  position: relative;
+  left: -40px;
+  z-index: 1;
+}
+#header .logo figcaption {
+  position: relative;
+  left: 25px;
+}
+#header .mascot {
+  height: 210px;
+}
+#header .mascot .character {
+  max-width: none;
+  position: relative;
+  top: -60px;
+  left: -80px;
+  z-index: 2;
+}
+#header .mascot .building {
+  max-width: none;
+  position: relative;
+  top: -410px;
+  left: -130px;
+  z-index: 0;
 }
 
 #nav {
   margin-top: 50px;
+  position: relative;
+  border: 2px solid #fff;
+  z-index: 9999;
+  -webkit-box-shadow: 0 0 10px #cccccc;
+  -moz-box-shadow: 0 0 10px #cccccc;
+  box-shadow: 0 0 10px #cccccc;
 }
 #nav ul li {
   width: 235px;
@@ -27,7 +80,7 @@
   background-color: #45a7de;
 }
 #nav ul li a {
-  padding: 27px 5px 3px 0;
+  padding: 33px 5px 3px 0;
   text-align: right;
   display: block;
   font-size: 20px;
@@ -38,15 +91,52 @@
 #content {
   margin-top: 50px;
   padding-bottom: 50px;
-  background-color: #e8e8e8;
+  background-color: #fff;
+  border: 5px dotted #ecebec;
 }
 
 #footer {
   margin-top: 35px;
-  margin-bottom: 65px;
+  padding-bottom: 25px;
 }
 #footer .credit {
   text-align: center;
+}
+
+#colophon .fnav {
+  margin: 20px 0 0;
+}
+#colophon .fnav li {
+  float: left;
+  list-style: none;
+  border-left: 1px solid #999;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+#colophon .fnav li:first-child {
+  border-left: none;
+}
+#colophon .colored {
+  margin: 0;
+}
+#colophon .colored li {
+  float: left;
+  list-style: none;
+  text-indent: -9999em;
+  height: 90px;
+  width: 50px;
+}
+#colophon .colored li.red {
+  background-color: #e2007c;
+}
+#colophon .colored li.yellow {
+  background-color: #ffc300;
+}
+#colophon .colored li.green {
+  background-color: #4cc52d;
+}
+#colophon .colored li.blue {
+  background-color: #009cec;
 }
 
 #content.top > header h1 {
