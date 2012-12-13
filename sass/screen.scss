@@ -13,10 +13,10 @@
 // ページ幅
 $containerWidth: 940px;
 
-// ページのレイアウト全般の余白
+// ページのレイアウト全般の余白 の基準
 $sectionGutter: 50px;
 
-// コンテンツエリアの余白
+// コンテンツエリアの余白 の基準
 $contentSectionGutter: 50px;
 
 .container {
@@ -29,7 +29,7 @@ $contentSectionGutter: 50px;
 }
 
 #wrap-header {
-  background: url(../img/hdr-bgrr.png);
+  background: url(../img/top-hdr-bgrr.png);
   background-repeat: repeat-x;
 }
 
@@ -60,7 +60,8 @@ $contentSectionGutter: 50px;
       position: relative;
       left: 25px;
     }
-  }
+  } // end .logo
+
   .mascot {
     height: 210px;
 
@@ -78,8 +79,9 @@ $contentSectionGutter: 50px;
       left: -130px;
       z-index: 0;
     }
-  }
-}
+  } // end .mascot
+
+} // end #header
 
 #nav {
   margin-top: $sectionGutter;
@@ -106,7 +108,7 @@ $contentSectionGutter: 50px;
       @include text-shadow(0 1px 1px rgba(0, 0, 0, 0.7));
     }
   }
-}
+} // end #nav
 
 #content {
   margin-top: $sectionGutter;
@@ -128,7 +130,7 @@ $contentSectionGutter: 50px;
 
 #colophon {
 
-  .fnav {
+  .fnav { // footer nav
     margin: $sectionGutter*0.4 0 0;
     li {
       float: left;
@@ -141,7 +143,7 @@ $contentSectionGutter: 50px;
         border-left: none;
       }
     }
-  }
+  } // end .fnav
 
   .colored {
     margin: 0;
@@ -158,21 +160,16 @@ $contentSectionGutter: 50px;
       &.blue { background-color: #009cec }
 
     }
-  }
-}
+  } // end .colored
+
+} // end #colophon
 
 //==============================================================================
 //  ページ毎のスタイル
 //==============================================================================
 
-#content {
-
-  //----------------------------------------------------------------------------
-  // トップページ
-  //----------------------------------------------------------------------------
-
-  &.top {
-
+.top {
+  #content {
     > header {
       h1 {
         $fontSize: 25px;
@@ -203,8 +200,119 @@ $contentSectionGutter: 50px;
         padding-right: $contentSectionGutter;
       }
     }
+  } // end #content
+} // end .top
+
+
+.wiki {
+  #wrap-header {
+    background: none;
   }
-}
 
+  #wrap-content {
 
+  }
 
+  #header {
+    padding-top: $sectionGutter * 0.6;
+  }
+
+  #hero {
+    .logo {
+      figcaption {
+        display: none;
+      }
+    }
+    .main-menu {
+      li {
+        list-style: none;
+        text-align: center;
+        display: inline;
+      }
+    }
+    .wiki-menu {
+      margin-top: 60px;
+      li {
+        float: left;
+        list-style: none;
+        text-align: center;
+
+        margin-left: 10px;
+        padding-left: 10px;
+
+        a {
+          color: #aaa;
+        }
+      }
+    }
+  } // end #hero
+
+  #nav {
+    margin-top: 20px;
+  }
+
+  #content {
+    margin-left: 0;
+    padding: 20px;
+    width: 650px;
+    border: 5px dotted #ecebec;
+    > header {
+      $fontSize: 25px;
+
+      position: relative;
+      top: -25px;
+      left: -25px;
+      width: 696px;
+      background: #996666;
+      border: 2px solid #fff;
+      margin-bottom: 40px;
+      @include box-shadow(0 0 10px #ccc);
+
+      h1 {
+        font-size: $fontSize;
+        line-height: $fontSize;
+        margin: 20px 0 5px 10px;
+        color: #fff;
+        @include text-shadow(0 1px 1px #000);
+      }
+      h2 {
+        position: absolute;
+        left: 20px;
+        margin-top: 30px;
+        font-size: $fontSize;
+        line-height: $fontSize;
+      }
+    }
+  } // end #content
+
+  #side-menu {
+    margin-top: $sectionGutter;
+    padding-bottom: $sectionGutter;
+    background-color: #dfdfdf;
+
+    padding: 20px;
+    border: 2px solid #fff;
+    width: 176px; // ボーダー用に横幅減らす
+    @include box-shadow(0 0 10px #ccc);
+
+    header {
+      h1 {
+        $fontSize: 16px;
+        font-size: $fontSize;
+        line-height: $fontSize;
+        margin: 0;
+
+        & + hr {
+          margin-top: $sectionGutter * 0.2;
+          margin-bottom: $sectionGutter * 0.3;
+        }
+      }
+    } // end #header
+
+    hr {
+      border: none;
+      border-top: 1px solid rgba(0,0,0,0.09);
+      border-bottom: 1px solid #fff;
+    }
+  } // end #side-menu
+} // end .wiki

@@ -8,7 +8,7 @@
 }
 
 #wrap-header {
-  background: url(../img/hdr-bgrr.png);
+  background: url(../img/top-hdr-bgrr.png);
   background-repeat: repeat-x;
 }
 
@@ -139,24 +139,112 @@
   background-color: #009cec;
 }
 
-#content.top > header h1 {
+.top #content > header h1 {
   font-size: 25px;
   line-height: 25px;
   margin: -12.5px 0;
   padding-left: 25px;
 }
-#content.top figure.span5 img {
+.top #content figure.span5 img {
   padding-top: 50px;
   padding-left: 50px;
 }
-#content.top div.span7 header {
+.top #content div.span7 header {
   padding-top: 50px;
 }
-#content.top div.span7 header h1 {
+.top #content div.span7 header h1 {
   font-size: 16px;
   line-height: 16px;
 }
-#content.top div.span7 header,
-#content.top div.span7 article {
+.top #content div.span7 header,
+.top #content div.span7 article {
   padding-right: 50px;
+}
+
+.wiki #wrap-header {
+  background: none;
+}
+.wiki #header {
+  padding-top: 30px;
+}
+.wiki #hero .logo figcaption {
+  display: none;
+}
+.wiki #hero .main-menu li {
+  list-style: none;
+  text-align: center;
+  display: inline;
+}
+.wiki #hero .wiki-menu {
+  margin-top: 60px;
+}
+.wiki #hero .wiki-menu li {
+  float: left;
+  list-style: none;
+  text-align: center;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+.wiki #hero .wiki-menu li a {
+  color: #aaa;
+}
+.wiki #nav {
+  margin-top: 20px;
+}
+.wiki #content {
+  margin-left: 0;
+  padding: 20px;
+  width: 650px;
+  border: 5px dotted #ecebec;
+}
+.wiki #content > header {
+  position: relative;
+  top: -25px;
+  left: -25px;
+  width: 696px;
+  background: #996666;
+  border: 2px solid #fff;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 0 0 10px #cccccc;
+  -moz-box-shadow: 0 0 10px #cccccc;
+  box-shadow: 0 0 10px #cccccc;
+}
+.wiki #content > header h1 {
+  font-size: 25px;
+  line-height: 25px;
+  margin: 20px 0 5px 10px;
+  color: #fff;
+  text-shadow: 0 1px 1px black;
+}
+.wiki #content > header h2 {
+  position: absolute;
+  left: 20px;
+  margin-top: 30px;
+  font-size: 25px;
+  line-height: 25px;
+}
+.wiki #side-menu {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  background-color: #dfdfdf;
+  padding: 20px;
+  border: 2px solid #fff;
+  width: 176px;
+  -webkit-box-shadow: 0 0 10px #cccccc;
+  -moz-box-shadow: 0 0 10px #cccccc;
+  box-shadow: 0 0 10px #cccccc;
+}
+.wiki #side-menu header h1 {
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0;
+}
+.wiki #side-menu header h1 + hr {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.wiki #side-menu hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.09);
+  border-bottom: 1px solid #fff;
 }
