@@ -1,3 +1,4 @@
+@charset "utf-8";
 //==============================================================================
 //  screen.css
 //  表示用。スタイルは基本的にここに全て書く
@@ -29,8 +30,23 @@ $contentSectionGutter: 50px;
 }
 
 #wrap-header {
-  background: url(../img/top-hdr-bgrr.png);
-  background-repeat: repeat-x;
+  /* IE10 Consumer Preview */ 
+  background-image: -ms-linear-gradient(bottom, #FFFFFF 75%, #00A3EF 100%);
+
+  /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(bottom, #FFFFFF 75%, #00A3EF 100%);
+
+  /* Opera */ 
+  background-image: -o-linear-gradient(bottom, #FFFFFF 75%, #00A3EF 100%);
+
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.75, #FFFFFF), color-stop(1, #00A3EF));
+
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(bottom, #FFFFFF 75%, #00A3EF 100%);
+
+  /* W3C Markup, IE10 Release Preview */ 
+  background-image: linear-gradient(to top, #FFFFFF 75%, #00A3EF 100%);
 }
 
 #wrap-content {
