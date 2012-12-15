@@ -1,14 +1,18 @@
 /*
-Syntax error: Invalid CSS after "": expected selector or at-rule, was "<<<<<<< HEAD"
-        on line 1 of /Users/Taishi/Tests/wdm2012iota/sass/screen.scss
-
-1: /Users/Taishi/Tests/wdm2012iota/sass/screen.scss
+Syntax error: Invalid CSS after "...7a415ca00571393": expected "{", was ""
+        on line 367 of /Users/Taishi/Tests/wdm2012iota/sass/screen.scss
 
 Backtrace:
-/Users/Taishi/Tests/wdm2012iota/sass/screen.scss:1
+/Users/Taishi/Tests/wdm2012iota/sass/screen.scss:367
 /Library/Ruby/Gems/1.8/gems/sass-3.2.0/lib/sass/../sass/scss/parser.rb:1130:in `expected'
 /Library/Ruby/Gems/1.8/gems/sass-3.2.0/lib/sass/../sass/scss/parser.rb:1066:in `expected'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.0/lib/sass/../sass/scss/parser.rb:28:in `parse'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0/lib/sass/../sass/scss/parser.rb:1061:in `tok!'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0/lib/sass/../sass/scss/parser.rb:517:in `block'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0/lib/sass/../sass/scss/parser.rb:512:in `ruleset'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0/lib/sass/../sass/scss/parser.rb:536:in `block_child'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0/lib/sass/../sass/scss/parser.rb:529:in `block_contents'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0/lib/sass/../sass/scss/parser.rb:70:in `stylesheet'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.0/lib/sass/../sass/scss/parser.rb:27:in `parse'
 /Library/Ruby/Gems/1.8/gems/sass-3.2.0/lib/sass/../sass/engine.rb:342:in `_to_tree'
 /Library/Ruby/Gems/1.8/gems/sass-3.2.0/lib/sass/../sass/engine.rb:315:in `_render'
 /Library/Ruby/Gems/1.8/gems/sass-3.2.0/lib/sass/../sass/engine.rb:262:in `render'
@@ -54,4 +58,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"\": expected selector or at-rule, was \"<<<<<<< HEAD\"\A         on line 1 of /Users/Taishi/Tests/wdm2012iota/sass/screen.scss\A \A 1: /Users/Taishi/Tests/wdm2012iota/sass/screen.scss"; }
+  content: "Syntax error: Invalid CSS after \"...7a415ca00571393\": expected \"{\", was \"\"\A         on line 367 of /Users/Taishi/Tests/wdm2012iota/sass/screen.scss"; }
