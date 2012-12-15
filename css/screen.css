@@ -198,6 +198,15 @@
   width: 650px;
   border: 5px dotted #ecebec;
 }
+.wiki #content article h2 {
+  font-size: 22px;
+  line-height: 1.2;
+}
+.wiki #content article h3 {
+  font-size: 16px;
+  line-height: 1.2;
+  margin-top: 20px;
+}
 .wiki #content > header {
   position: relative;
   top: -25px;
