@@ -242,6 +242,15 @@
   width: 630px;
   height: 100px;
 }
+.wiki #content.dic header {
+  background: #aaa;
+}
+.wiki #content.spot header {
+  background: #444;
+}
+.wiki #content.class header {
+  background: #000;
+}
 .wiki #side-menu {
   margin-top: 50px;
   padding-bottom: 50px;

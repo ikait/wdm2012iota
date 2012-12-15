@@ -282,6 +282,9 @@ $contentSectionGutter: 50px;
       margin-bottom: 40px;
       @include box-shadow(0 0 10px #ccc);
 
+
+
+
       h1 {
         font-size: $fontSize;
         line-height: $fontSize;
@@ -308,6 +311,22 @@ $contentSectionGutter: 50px;
         width: 630px;
         height: 100px;
       }
+    }
+
+    //
+    // コンテンツヘッダの設定。上を上書きする形で設定する
+    //
+    // SFC語録
+    &.dic header {
+      background: #aaa;
+    }
+    // おすすめスポット
+    &.spot header {
+      background: #444;
+    }
+    // おすすめ授業
+    &.class header {
+      background: #000;
     }
 
   } // end #content
