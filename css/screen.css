@@ -1,61 +1,280 @@
-/*
-Syntax error: Invalid CSS after "...7a415ca00571393": expected "{", was ""
-        on line 367 of /Users/Taishi/Tests/wdm2012iota/sass/screen.scss
+@charset "utf-8";
+.container {
+  width: 940px;
+}
 
-Backtrace:
-/Users/Taishi/Tests/wdm2012iota/sass/screen.scss:367
-/Library/Ruby/Gems/1.8/gems/sass-3.2.0/lib/sass/../sass/scss/parser.rb:1130:in `expected'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.0/lib/sass/../sass/scss/parser.rb:1066:in `expected'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.0/lib/sass/../sass/scss/parser.rb:1061:in `tok!'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.0/lib/sass/../sass/scss/parser.rb:517:in `block'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.0/lib/sass/../sass/scss/parser.rb:512:in `ruleset'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.0/lib/sass/../sass/scss/parser.rb:536:in `block_child'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.0/lib/sass/../sass/scss/parser.rb:529:in `block_contents'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.0/lib/sass/../sass/scss/parser.rb:70:in `stylesheet'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.0/lib/sass/../sass/scss/parser.rb:27:in `parse'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.0/lib/sass/../sass/engine.rb:342:in `_to_tree'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.0/lib/sass/../sass/engine.rb:315:in `_render'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.0/lib/sass/../sass/engine.rb:262:in `render'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `compile'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `compile'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-/Library/Ruby/Site/1.8/rubygems/custom_require.rb:36:in `to_proc'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `modified'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `each'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `each'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `loop'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/bin/compass:30
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/bin/compass:44:in `call'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/bin/compass:44
-/usr/bin/compass:23:in `load'
-/usr/bin/compass:23
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"...7a415ca00571393\": expected \"{\", was \"\"\A         on line 367 of /Users/Taishi/Tests/wdm2012iota/sass/screen.scss"; }
+#page {
+  overflow-x: hidden;
+  min-width: 1000px;
+}
+
+#wrap-header {
+  /* IE10 Consumer Preview */
+  background-image: -ms-linear-gradient(bottom, white 75%, #00a3ef 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(bottom, white 75%, #00a3ef 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(bottom, white 75%, #00a3ef 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.75, white), color-stop(1, #00a3ef));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(bottom, white 75%, #00a3ef 100%);
+  /* W3C Markup, IE10 Release Preview */
+  background-image: linear-gradient(to top, #ffffff 75%, #00a3ef 100%);
+}
+
+#wrap-content {
+  background: url(../img/cnt-bg.png);
+  margin-top: -30px;
+  padding-top: 30px;
+}
+
+#wrap-colophon {
+  background-color: #ecebec;
+}
+
+#header {
+  padding-top: 80px;
+  text-align: center;
+}
+#header .logo figure img {
+  max-width: none;
+  position: relative;
+  left: -40px;
+  z-index: 1;
+}
+#header .logo figcaption {
+  position: relative;
+  left: 25px;
+}
+#header .mascot {
+  height: 210px;
+}
+#header .mascot .character {
+  max-width: none;
+  position: relative;
+  top: -60px;
+  left: -80px;
+  z-index: 2;
+}
+#header .mascot .building {
+  max-width: none;
+  position: relative;
+  top: -410px;
+  left: -130px;
+  z-index: 0;
+}
+
+#nav {
+  margin-top: 50px;
+  position: relative;
+  border: 2px solid #fff;
+  z-index: 9999;
+  -webkit-box-shadow: 0 0 10px #cccccc;
+  -moz-box-shadow: 0 0 10px #cccccc;
+  box-shadow: 0 0 10px #cccccc;
+}
+#nav ul li {
+  width: 235px;
+  float: left;
+}
+#nav ul li.nav-dic {
+  background-color: #e6136e;
+}
+#nav ul li.nav-spot {
+  background-color: #e9a800;
+}
+#nav ul li.nav-class {
+  background-color: #6ab935;
+}
+#nav ul li.nav-glry {
+  background-color: #45a7de;
+}
+#nav ul li a {
+  padding: 33px 5px 3px 0;
+  text-align: right;
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+#content {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  background-color: #fff;
+  border: 5px dotted #ecebec;
+}
+
+#footer {
+  margin-top: 35px;
+  padding-bottom: 25px;
+}
+#footer .credit {
+  text-align: center;
+}
+
+#colophon .fnav {
+  margin: 20px 0 0;
+}
+#colophon .fnav li {
+  float: left;
+  list-style: none;
+  border-left: 1px solid #999;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+#colophon .fnav li:first-child {
+  border-left: none;
+}
+#colophon .colored {
+  margin: 0;
+}
+#colophon .colored li {
+  float: left;
+  list-style: none;
+  text-indent: -9999em;
+  height: 90px;
+  width: 50px;
+}
+#colophon .colored li.red {
+  background-color: #e2007c;
+}
+#colophon .colored li.yellow {
+  background-color: #ffc300;
+}
+#colophon .colored li.green {
+  background-color: #4cc52d;
+}
+#colophon .colored li.blue {
+  background-color: #009cec;
+}
+
+.top #content > header h1 {
+  font-size: 25px;
+  line-height: 25px;
+  margin: -12.5px 0;
+  padding-left: 25px;
+}
+.top #content figure.span5 img {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.top #content div.span7 header {
+  padding-top: 50px;
+}
+.top #content div.span7 header h1 {
+  font-size: 16px;
+  line-height: 16px;
+}
+.top #content div.span7 header,
+.top #content div.span7 article {
+  padding-right: 50px;
+}
+
+.wiki #wrap-header {
+  background: none;
+}
+.wiki #header {
+  padding-top: 30px;
+}
+.wiki #hero .logo figcaption {
+  display: none;
+}
+.wiki #hero .main-menu li {
+  list-style: none;
+  text-align: center;
+  display: inline;
+}
+.wiki #hero .wiki-menu {
+  margin-top: 30px;
+}
+.wiki #hero .wiki-menu li {
+  float: left;
+  display: inline;
+  list-style: none;
+  text-align: center;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+.wiki #hero .wiki-menu li a {
+  color: #aaa;
+}
+.wiki #nav {
+  margin-top: 20px;
+}
+.wiki #content {
+  margin-left: 0;
+  padding: 20px;
+  width: 650px;
+  border: 5px dotted #ecebec;
+}
+.wiki #content > header {
+  position: relative;
+  top: -25px;
+  left: -25px;
+  width: 696px;
+  background: #996666;
+  border: 2px solid #fff;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 0 0 10px #cccccc;
+  -moz-box-shadow: 0 0 10px #cccccc;
+  box-shadow: 0 0 10px #cccccc;
+}
+.wiki #content > header h1 {
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: normal;
+  margin: 20px 0 5px 10px;
+  color: #fff;
+  text-shadow: 0 1px 1px black;
+}
+.wiki #content > header h2 {
+  position: absolute;
+  left: 20px;
+  margin-top: 30px;
+  font-size: 25px;
+  line-height: 25px;
+}
+.wiki #content .form .contents {
+  width: 630px;
+  height: 300px;
+}
+.wiki #content .form .keyword {
+  width: 630px;
+  height: 100px;
+}
+.wiki #content.dic header {
+  background: #aaa;
+}
+.wiki #content.spot header {
+  background: #444;
+}
+.wiki #content.class header {
+  background: #000;
+}
+.wiki #side-menu {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  background-color: #dfdfdf;
+  padding: 20px;
+  border: 2px solid #fff;
+  width: 176px;
+  -webkit-box-shadow: 0 0 10px #cccccc;
+  -moz-box-shadow: 0 0 10px #cccccc;
+  box-shadow: 0 0 10px #cccccc;
+}
+.wiki #side-menu header h1 {
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0;
+}
+.wiki #side-menu header h1 + hr {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.wiki #side-menu hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.09);
+  border-bottom: 1px solid #fff;
+}
