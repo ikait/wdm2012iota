@@ -231,9 +231,10 @@ $contentSectionGutter: 50px;
       }
     }
     .wiki-menu {
-      margin-top: 60px;
+      margin-top: 30px;
       li {
         float: left;
+        display: inline;
         list-style: none;
         text-align: center;
 
@@ -271,6 +272,7 @@ $contentSectionGutter: 50px;
       h1 {
         font-size: $fontSize;
         line-height: $fontSize;
+        font-weight: normal;
         margin: 20px 0 5px 10px;
         color: #fff;
         @include text-shadow(0 1px 1px #000);
@@ -283,6 +285,18 @@ $contentSectionGutter: 50px;
         line-height: $fontSize;
       }
     }
+
+    .form {
+      .contents {
+        width: 630px;
+        height: 300px;
+      }
+      .keyword {
+        width: 630px;
+        height: 100px;
+      }
+    }
+
   } // end #content
 
   #side-menu {

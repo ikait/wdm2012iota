@@ -176,10 +176,11 @@
   display: inline;
 }
 .wiki #hero .wiki-menu {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 .wiki #hero .wiki-menu li {
   float: left;
+  display: inline;
   list-style: none;
   text-align: center;
   margin-left: 10px;
@@ -212,6 +213,7 @@
 .wiki #content > header h1 {
   font-size: 25px;
   line-height: 25px;
+  font-weight: normal;
   margin: 20px 0 5px 10px;
   color: #fff;
   text-shadow: 0 1px 1px black;
@@ -222,6 +224,14 @@
   margin-top: 30px;
   font-size: 25px;
   line-height: 25px;
+}
+.wiki #content .form .contents {
+  width: 630px;
+  height: 300px;
+}
+.wiki #content .form .keyword {
+  width: 630px;
+  height: 100px;
 }
 .wiki #side-menu {
   margin-top: 50px;
